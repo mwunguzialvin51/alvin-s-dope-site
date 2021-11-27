@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size: 80%;
+}
+
+
+header
+{
+
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    background:url(black-and-yellow.jpg);
+    background-position: center;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+ul
+{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin:1rem 2rem ;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+
+
+
+ul li a:hover{
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.button
+{
+    background: yellow;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    box-shadow: 5px 5px 8px rgba(211, 224, 27, 0.89);
+    color: black;
+}
+
+
+.button:hover{
+    background: red;
+    box-shadow: 5px 5px 8px rgba(224, 11, 29, 0.877);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* the main-container */
+.main-container
+{
+
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 0.2rem solid rgb(255, 196, 0);
+    background: linear-gradient(45deg, #fff 60%, rgba(255,195,0) 60%);
+    box-shadow: 15px 15px 15px 12px rgba(0,0,0,0.3);
+    
+
+
+}
+
+
+
+.yellow-circle
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    background:url(yellow-and-white.jpg);
+    background-size: cover;
+    background-position:center;
+    box-shadow: -5px -5px 6px rgb(243, 243, 243), 4px 3px 3px rgba(0,0,0,0.3);
+
+}
+
+
+
+.morph
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 30rem;
+    background:url(yellow-and-white.jpg);
+    background-size: cover;
+    background-position:center;
+    border-radius: 50%;
+    z-index: 0;
+    box-shadow: -5px -5px 6px rgb(243, 243, 243), 4px 3px 3px rgba(0,0,0,0.3);
+}
+
+
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.other1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+
+
+
+
+
+.other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+
+     .other1 input
+{
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    outline: none;
+    margin: 2rem;
+    box-shadow: inset -5px -5px 3px rgb(241, 241, 241),inset 5px 5px 7px rgba(0,0,0,0.2) ;
+}
+
+
+.other input
+{
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background: #ffc400;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    outline: none;
+    margin: 2rem;
+    box-shadow: inset -5px -5px 3px rgb(235, 191, 46),inset 5px 5px 7px rgba(0,0,0,0.2) ;
+}
+
+
+.submit{
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    justify-content: center;
+    background: #ffc400;
+    padding: 1rem 2rem;
+    color: #fff;
+    box-shadow:-5px -5px 3px rgb(235, 191, 46),5px 5px 7px rgba(0,0,0,0.2) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+
+.footer h1{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bars img{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
+
+#toggler
+{
+ display: none;
+}
+
+@media (max-width:700px)
+{
+ header ul
+ {
+     position: fixed;
+     width: 100%;
+     height: 40vh;
+     background:#ecf0fe;
+     top: 5rem;
+     transition: 0.5s;
+     right: 0;
+     left: -100%;
+ 
+ }
+
+
+ header ul li
+ {
+     display: block;
+ }
+
+
+ header ul li a{
+     transition: 0.5s;
+     color: black;
+     font-size: 1rem;
+ }
+
+
+ ul li a:hover
+ {
+     color: red;
+     font-size: 1.4rem;
+ }
+
+ .bars img
+ {
+     display: block;
+ }
+
+
+
+ #toggler:checked ~ ul
+ {
+     left: 0;
+ }
+
+
+
+ .main-container
+ {
+     height: 100%;
+     width: 100%;
+ }
+
+
+
+
+ .yellow-circle{
+    width: 30rem;
+    height: 30rem;
+ }
+
+
+ .morph
+ {
+    width: 20rem;
+    height: 20rem;
+ }
+
+
+
+ .other1 input{
+     padding: 0.3rem 0.5rem;
+ }
+
+
+ .other input{
+    padding: 0.3rem 0.5rem;
+ }
+
+
+ .submit{
+     padding: 0.5rem 1rem;
+     font-size: 1rem;
+ }
+
+
+ .submit h1{
+    font-size: 1rem;
+ }
+
+
+
+}

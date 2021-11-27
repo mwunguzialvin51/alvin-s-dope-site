@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background: white;
+}
+
+
+html{
+    font-size: 80%;
+}
+
+
+header
+{
+
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    background:url(black-and-yellow.jpg);
+    background-position: center;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+
+.logo h1{
+    color: #fff;
+}
+
+
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+ul
+{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin:1rem 2rem ;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+
+
+
+ul li a:hover{
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.button
+{
+    background: yellow;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    box-shadow: 5px 5px 8px rgba(211, 224, 27, 0.89);
+    color: black;
+}
+
+
+.button:hover{
+    background: red;
+    box-shadow: 5px 5px 8px rgba(224, 11, 29, 0.877);
+
+}
+
+
+
+
+
+
+/* the main-body */
+
+
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background:url('yellow-and-white.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+
+
+.container3
+{
+    width: 40rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    border-radius: 1rem;
+    border-radius: 2rem;
+    border: 0.2rem solid #000000;
+
+}
+
+
+
+.container3 h1
+{
+    font-size: 3rem;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+
+
+.container3 h1:hover{
+     font-size: 3rem;
+}
+
+
+
+
+.second-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-attachment:fixed;
+    height: 100%;
+    background:url('white-background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.second-container h3{
+    margin-top: 7rem;
+    color: rgb(255, 187, 0);
+    font-size: 2.5rem;
+}
+
+
+.flex1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.flex2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+.second-container h1{
+    margin-left: 3rem;
+    color: rgb(255, 208, 0);
+}
+
+
+.playing-basket{
+    width: 13rem;
+    display: flex;
+    color:#000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+    height: 15rem;
+}
+
+
+.playing-basket img{
+    width: 10rem;
+    transition: 0.5s;
+}
+
+
+
+
+.playing-basket:hover img{
+    width: 13rem;
+}
+
+
+
+
+.travelling{
+    width: 13rem;
+    flex-grow: 1;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20rem;
+    margin: 5rem;
+
+}
+
+
+.planet img{
+     width:10rem ;
+}
+
+
+
+
+
+
+
+
+
+.football{
+    width: 13rem;
+    height: 15rem;
+    display: flex;
+    color: rgb(61, 58, 58);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+
+}
+
+
+.football img{
+    width: 20rem;
+}
+
+
+
+
+
+
+.family{
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+
+}
+
+
+.family img{
+    width: 15rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 6px 8px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+
+
+
+.family:hover img{
+    width: 17rem;
+}
+
+
+
+
+
+
+
+.education{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15rem;
+    color: #000;
+    margin-top: 7rem;
+
+}
+
+
+.education img{
+    width: 10rem;
+    transition: 0.5s;
+}
+
+
+
+.education:hover img{
+    width: 15rem;
+}
+
+
+
+.third-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-attachment:fixed;
+    height: 100%;
+    background:url('white-background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.third-container h3
+{
+
+    color: rgb(255, 187, 0);
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+.flex3{
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: rgb(255, 187, 0);
+    font-size: 2.5rem;
+}
+
+
+
+.training-basket{
+    width: 13rem;
+    display: flex;
+    color:#000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+    height: 15rem;
+}
+
+
+.training-basket img{
+    width: 20rem;
+    transition: 0.5s;
+}
+
+
+.training-basket p{
+    font-size: 1rem;
+}
+
+
+
+
+.food{
+    width: 13rem;
+    flex-grow: 1;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20rem;
+    margin: 5rem;
+}
+
+
+
+.food img{
+    width:15rem;
+
+}
+
+
+.food p{
+    font-size: 1rem;
+}
+
+
+
+.diving{
+    width: 13rem;
+    height: 15rem;
+    display: flex;
+    color: rgb(61, 58, 58);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+
+
+.diving img{
+    width: 20rem;
+
+}
+
+
+.diving p{
+    font-size: 1rem;
+}
+
+
+
+
+.flex4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.beach{
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5rem;
+}
+
+
+.beach img{
+    width: 20rem;
+}
+
+
+
+.swimming
+{
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15rem;
+    color: #000;
+}
+
+
+
+.swimming img
+{
+    width: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+.footer
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+
+.footer h1{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bars img{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
+
+#toggler
+{
+ display: none;
+}
+
+@media (max-width:700px)
+{  html{
+    font-size: 80%;
+}
+
+
+
+
+ header ul
+ {
+     position: fixed;
+     width: 100%;
+     height: 40vh;
+     background:#ecf0fe;
+     top: 5rem;
+     transition: 0.5s;
+     right: 0;
+     left: -100%;
+ 
+ }
+
+
+ header ul li
+ {
+     display: block;
+ }
+
+
+ header ul li a{
+     transition: 0.5s;
+     color: black;
+     font-size: 1rem;
+ }
+
+
+ ul li a:hover
+ {
+     color: red;
+     font-size: 1.4rem;
+ }
+
+ .bars img
+ {
+     display: block;
+ }
+
+
+
+ #toggler:checked ~ ul
+ {
+     left: 0;
+ }
+
+
+ .container3{
+     width: 30rem;
+     height: 20rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+

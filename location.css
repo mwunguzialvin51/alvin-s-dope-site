@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background: #fff;
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size: 80%;
+}
+
+
+header
+{
+
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    background:url(black-and-yellow.jpg);
+    background-position: center;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.logo h1{
+    color: #fff;
+}
+
+
+
+ul
+{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin:1rem 2rem ;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+
+
+
+ul li a:hover{
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.button
+{
+    background: yellow;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    box-shadow: 5px 5px 8px rgba(211, 224, 27, 0.89);
+    color: #000;
+}
+
+
+.button:hover{
+    background: red;
+    box-shadow: 5px 5px 8px rgba(224, 11, 29, 0.877);
+
+}
+
+
+
+
+.second-container{
+    width: 100%;
+    height: 100vh;
+    background: url('yellow-and-white.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+
+.second-container p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.yellow-box{
+    width: 40rem;
+    height: 40rem;
+    background:url(yellow-and-white.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: -3px -3px 5px rgb(245, 245, 245), 10px 8px 14px rgba(185, 185, 185, 0.2);
+}
+
+
+
+
+
+
+.image-box{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    background:url(yellow-and-white.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: -2px -2px 2px rgb(230, 228, 228), 10px 8px 14px rgba(185, 185, 185, 0.2);
+}
+
+
+
+.family{
+    width: 25rem;
+    height: 30rem;
+    background: url('family.jpg');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    margin-top: 5rem;
+    height: 25rem;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
+}
+
+
+.map-name
+{
+
+    display: flex;
+    padding: 1rem 3rem;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    align-items: center;
+    background: rgb(255, 208, 0);
+    box-shadow:  10px 8px 14px rgba(231, 209, 12, 0.2);
+
+}
+
+
+.map-name h1{
+    font-size: 1rem;
+    color:#fff;
+}
+
+.map-name:hover
+{
+    background: red;
+    box-shadow: 5px 3px 4px red;
+}
+
+
+
+
+.third-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+}
+
+
+
+.third-container h1{
+    color: #FFAE0D;
+}
+
+
+
+
+.flex-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+.skills-i-posses
+{
+    width: 20rem;
+    height: 10rem;
+    margin: 5rem;
+}
+
+
+.skills-i-posses img{
+    width: 13rem;
+}
+
+
+
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    margin: 5rem;
+    height: 10rem;
+
+}
+
+
+
+.projects img
+{
+    width: 15rem;
+}
+
+
+
+.forward
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    margin-bottom: 50px;
+    height: 10rem;
+
+}
+
+
+.forward img
+{
+    width: 17rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+
+.footer h1{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the media quaries */
+
+
+
+
+
+
+.bars img{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
+
+#toggler
+{
+ display: none;
+}
+
+@media (max-width:700px)
+{
+ header ul
+ {
+     position: fixed;
+     width: 100%;
+     height: 40vh;
+     background:#ecf0fe;
+     top: 5rem;
+     transition: 0.5s;
+     right: 0;
+     left: -100%;
+ 
+ }
+
+
+ header ul li
+ {
+     display: block;
+ }
+
+
+ header ul li a{
+     transition: 0.5s;
+     font-size: 1rem;
+     color: #000;
+ }
+
+
+ ul li a:hover
+ {
+     color: red;
+     font-size: 1.4rem;
+ }
+
+ .bars img
+ {
+     display: block;
+ }
+
+
+
+ #toggler:checked ~ ul
+ {
+     left: 0;
+ }
+
+
+ .second-container{
+     height: 100%;
+     width: 100%;
+ }
+
+
+
+
+ .third-container{
+     height: 100%;
+ }
+
+
+ .yellow-box{
+    width: 30rem;
+    height: 30rem;
+ }
+
+
+ .image-box{
+     height: 25rem;
+     width: 25rem;
+ }
+
+
+ .family{
+    width: 20rem;
+    height: 15rem;
+}
+
+
+.inner
+{
+    width: 20rem;
+    height: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

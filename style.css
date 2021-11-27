@@ -1,0 +1,682 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    background: #fff;
+
+}
+
+
+html{
+    overflow-x: hidden;
+    font-size: 80%;
+}
+
+
+header
+{
+
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    background:url(black-and-yellow.jpg);
+    background-position: center;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+
+.logo h1{
+    color: #fff;
+}
+
+
+
+.logo img{
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+ul
+{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    margin:1rem 2rem ;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+
+
+
+ul li a:hover{
+    color: red;
+    font-size: 1.5rem;
+}
+
+
+.button
+{
+    background: yellow;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.6rem;
+    box-shadow: 5px 5px 8px rgba(211, 224, 27, 0.89);
+    color: black;
+}
+
+
+.button:hover{
+    background: red;
+    box-shadow: 5px 5px 8px rgba(224, 11, 29, 0.877);
+
+}
+
+
+
+
+
+
+
+/* the main-container */
+
+
+.main-container{
+    display: grid;
+    height: 100vh;
+    background:linear-gradient(45deg, #fff 60%, rgb(255, 208, 0) 60%);
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-gap: 10px;
+    overflow: hidden;
+}
+
+
+
+.left-side
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+.content h1{
+    position: absolute;
+    left: 20px;
+    top: -100%;
+    overflow: hidden;
+    font-size: 2.5rem;
+    color: black;
+    animation: anim2 3s forwards;
+}
+
+
+
+@keyframes anim2{
+    from{
+        top: -100%;
+    }
+
+
+    to{
+        top: 20%;
+    }
+}
+
+.content p{
+    font-size: 1rem;
+    color: #000;
+    position: relative;
+    right: -100%;
+    top: 80px;
+    animation: anim3 4s forwards;
+}
+
+@keyframes anim3{
+    from{
+        right: -100%;
+    }
+
+
+    to{
+        right: 5%;
+    }
+}
+
+
+
+
+span{
+    color: black;
+}
+
+
+
+.button-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.button1
+{
+    background:url(yellow-and-white.jpg);
+    background-position:center ;
+    background-size: cover;
+    padding: 1.5rem 3rem;
+    color:black;
+    border-radius: 0.5rem;
+    margin-top: 100px;
+    box-shadow: 1px 1px 1px 2px rgb(0,0,0,0.2);
+    position: absolute;
+    top: -100%;
+    left: 10%;
+    animation: anim4 5s forwards;
+}
+
+
+@keyframes anim4{
+    from{
+        top: -100%;
+    }
+
+
+    to{
+        top: 20%;
+    }
+}
+
+
+
+
+
+
+
+
+.button1:hover{
+    background: white;
+    box-shadow: 2px 2px 4px rgb(0,0,0,0.3);
+    color: black;
+}
+
+
+
+
+
+
+.planet{
+    margin-top: 250px;
+    position: relative;
+    margin-left: 50px;
+    width: 250px;
+    margin-bottom: 10px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1),
+                 inset  10px 10px 12px 8px rgba(0,0,0,0.6);
+    
+    background-size: cover;
+    background: url('cloud-planet.jpg');
+    animation: spin 20s linear infinite;
+}
+
+
+@keyframes spin
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+
+    100%
+    {
+        background-position: 720px 0;
+    }
+}
+
+
+.planet::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 10rem;
+    height: 10rem;
+    left: 100px;
+    background: url('blue-cloud-removebg-preview\ \(1\).png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+       transform: translateX(200px);
+    }
+
+
+    50%
+    {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+.planet::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    width: 12rem;
+    height: 4rem;
+    background: url('fighter-plane.png');
+    background-position: center;
+    background-size: cover;
+    animation: animate 8s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.right-side
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+
+
+.container2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(yellow-and-white.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow:   8px 7px  5px 8px rgba(0,0,0,0.2);
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    position: relative;
+    left: -100%;
+    animation: anim 2s forwards;
+}
+
+
+
+
+@keyframes anim
+{
+
+
+    from{
+        left:-100% ;
+    }
+
+
+
+    to{
+        left: 5%;
+    }
+}
+
+
+.container2 img{
+    width: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer
+{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    position: relative;
+}
+
+
+.footer h1{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the media quaries */
+
+
+
+
+
+
+.bars img{
+       width: 4rem;
+       height: 4rem;
+       display: none;
+}
+
+
+#toggler
+{
+    display: none;
+}
+
+@media (max-width:700px)
+{
+
+
+
+    header ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 40vh;
+        background:#ecf0fe;
+        top: 5rem;
+        transition: 0.5s;
+        right: 0;
+        left: -100%;
+    
+    }
+
+
+    header ul li
+    {
+        display: block;
+    }
+
+
+    header ul li a{
+        transition: 0.5s;
+        color: #000;
+        font-size: 1rem;
+    }
+
+
+    ul li a:hover
+    {
+        color: red;
+        font-size: 1.4rem;
+    }
+
+    .bars img
+    {
+        display: block;
+    }
+
+
+
+    #toggler:checked ~ ul
+    {
+        left: 0;
+    }
+
+
+
+    
+
+
+
+
+
+
+    .container2{
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+    }
+
+
+    .container2 img{
+
+        position: relative;
+        width:20rem ;
+    }
+
+
+
+
+
+    .main-container{
+        display: grid;
+        height: 100%;
+        background:linear-gradient(45deg, #fff 60%, rgb(255, 208, 0) 60%);
+        width: 100%;
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        grid-gap: 10px;
+    }
+    
+    
+    
+    .left-side
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .content h1{
+        position: relative;
+        left: 20px;
+        top: -100%;
+        overflow: hidden;
+        font-size: 3.5rem;
+        color: black;
+        animation: anim2 3s forwards;
+    }
+    
+    
+    
+    @keyframes anim2{
+        from{
+            top: -100%;
+        }
+    
+    
+        to{
+            top: 20%;
+        }
+    }
+    
+    .content p{
+        font-size: 1.5rem;
+        color: #000;
+        position: relative;
+        right: -100%;
+        top: 80px;
+        animation: anim3 4s forwards;
+    }
+    
+    @keyframes anim3{
+        from{
+            right: -100%;
+        }
+    
+    
+        to{
+            right: -5%;
+        }
+    }
+    
+    
+    
+    
+    span{
+        color: black;
+    }
+
+
+
+
+
+
+    .button1{
+         position: relative;
+    }
+
+
+    .planet{
+        position: relative;
+        margin-top: 20px;
+        
+    }
+
+
+
+
+
+
+    .footer{
+        position: relative;
+    }
+
+
+    @keyframes animate
+{
+    0%,100%
+    {
+       transform: translateX(180px);
+    }
+
+
+    50%
+    {
+        transform: translateX(-80px);
+    }
+}
+
+
+
+
+
+.planet::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    width: 12rem;
+    height: 4rem;
+    background: url('fighter-plane.png');
+    background-position: center;
+    background-size: cover;
+    animation: animate 9s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
